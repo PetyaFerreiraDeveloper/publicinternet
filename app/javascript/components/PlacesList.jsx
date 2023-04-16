@@ -23,25 +23,28 @@ function PlacesList() {
     return <div>Loading...</div>;
   }
 
+  const headerClass = "px-6 align-middle border border-solid py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left bg-pink-800 text-pink-300 border-pink-700";
+  const dataClass ="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+
   return (
     <table>
       <thead>
         <tr>
-          <th>Name</th>
-          <th>City</th>
-          <th>Recent Download Speed</th>
-          <th>Recent Download Speed Units</th>
-          <th>Number of measurements</th>
+          <th className={headerClass}>Name</th>
+          <th className={headerClass}>City</th>
+          <th className={headerClass}>Recent Download Speed</th>
+          <th className={headerClass}>Recent Download Speed Units</th>
+          <th className={headerClass}>Number of measurements</th>
         </tr>
       </thead>
       <tbody>
         {loadedPlaces.map((place, index) => (
           <tr key={index}>
-            <td>{place.name}</td>
-            <td>{place.city}</td>
-            <td>{place.most_recent_download_speed}</td>
-            <td>{place.most_recent_download_units}</td>
-            <td>{place.number_of_measurements}</td>
+            <td className={dataClass}>{place.name}</td>
+            <td className={dataClass}>{place.city}</td>
+            <td className={dataClass}>{place.most_recent_download_speed}</td>
+            <td className={dataClass}>{place.most_recent_download_units}</td>
+            <td className={dataClass}>{place.number_of_measurements}</td>
           </tr>
         ))}
       </tbody>
