@@ -1,9 +1,9 @@
 # README
 
-# Start the server
+# Start the server with both rails and react
 
-Run the command
-`rails s`
+Run the command in terminal
+`./bin/dev`
 
 The dev server opens on [localhost][http://127.0.0.1:3000/]
 
@@ -13,6 +13,8 @@ application up and running.
 Things you may want to cover:
 
 - Ruby version
+  To start only Ruby server
+  `rails s`
 
 - System dependencies
 
