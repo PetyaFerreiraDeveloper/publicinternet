@@ -1,5 +1,7 @@
 # README
 
+I am at 2:09 min in the video
+
 # Start the server with both rails and react
 
 Run the command in terminal
